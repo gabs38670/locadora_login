@@ -1,0 +1,23 @@
+ <header>
+        <img src="/css/img/carcompany.png" alt="">
+    <nav class="navbar">
+        <ul>
+            <li><a href="/home">Home</a></li>
+            <li><a href="/clientes">Cadastro</a></li>
+            <li><a href="/veiculos">Veiculo</a></li>
+            <li><a href="/reserva">Reserva</a></li>
+        </ul>
+    </nav>
+    </header>
+
+<h1>Clientes</h1>
+<div class="container">
+    {{#each cliente}}
+    <div class="container-style">
+        <p id="name">{{this.id}}- {{this.nome}}</p>
+        <p>Endereço: {{this.endereco}}</p>
+        <p>Telefone: {{this.telefone}}</p>
+        <p>E-mail: {{this.email}}</p>
+    </div>
+    {{/each}}
+</div>
